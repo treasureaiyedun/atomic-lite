@@ -180,9 +180,10 @@ header nav .navsection-links ul li a:hover {
 }
 .atomic-cards .thecards .cards {
   width: 25%;
-  height: 200px;
+  height: 139px;
   margin: 0 1rem 1rem 0;
   padding: 1rem;
+  overflow: hidden;
   box-shadow: 1px 2px 3px #c7b7b7;
 }
 .atomic-cards .thecards .cards p {
@@ -191,6 +192,7 @@ header nav .navsection-links ul li a:hover {
 .atomic-mountain {
   display: flex;
   padding: 3rem 0 5rem;
+  width: 100%;
 }
 
 .atomic-mountain > div {
@@ -200,10 +202,11 @@ header nav .navsection-links ul li a:hover {
 .atomic-mountain .atomic-text {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .atomic-mountain .atomic-text .textwrapper {
-  width: 250px;
+  width: 50%;
   padding-top: 8rem;
 }
 
@@ -220,13 +223,14 @@ header nav .navsection-links ul li a:hover {
 }
 
 .atomic-mountain .blue-mountain {
-  width: 70%;
+  width: 100%;
 }
 
 .atomic-mountain-02 {
   display: flex;
   flex-direction: row-reverse;
   margin-bottom: 10rem;
+  width: 100%;
 }
 
 .atomic-mountain-02 > div {
@@ -237,10 +241,11 @@ header nav .navsection-links ul li a:hover {
 .atomic-mountain-02 .atomic-text {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .atomic-mountain-02 .atomic-text .textwrapper {
-  width: 250px;
+  width: 50%;
   padding-top: 8rem;
 }
 
@@ -258,7 +263,7 @@ header nav .navsection-links ul li a:hover {
 }
 
 .atomic-mountain-02 .blue-mountain {
-  width: 42%;
+  width: 100%;
 }
 
 .banner-footer-02 {
@@ -307,7 +312,7 @@ footer {
   width: 50%;
 }
 
-.footer-logo{
+.footer-logo {
   width: 8%;
 }
 
@@ -316,47 +321,239 @@ footer {
   font-size: 1rem;
   margin-bottom: 1rem;
 }
-.footer-part-one .fa-facebook{
+.footer-part-one .fa-facebook {
   background-color: #454e75;
   border: 1px solid #454e75;
   border-radius: 100%;
-  padding: .35rem;
+  padding: 0.35rem;
 }
 .footer-part-two {
   display: flex;
 }
 
-.footer-part-two .footer-headings{
+.footer-part-two .footer-headings {
   margin-left: 5rem;
   height: 100%;
   font-size: small;
 }
-.footer-part-two .footer-headings ul li{
+.footer-part-two .footer-headings ul li {
   list-style: none;
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
   font-size: 1.2rem;
 }
 
-.footer-part-two .footer-headings h3{
+.footer-part-two .footer-headings h3 {
   margin-bottom: 2rem;
   font-size: small;
 }
-.footer-part-two .footer-headings a{
+.footer-part-two .footer-headings a {
   text-decoration: none;
   color: #c1bcbc;
 }
 
-.copyright-section{
+.copyright-section {
   display: flex;
   justify-content: space-between;
   padding: 3rem 3rem 2rem;
   color: #ffffff;
-  border-top: .5px solid #ffffff;
+  border-top: 0.5px solid #ffffff;
 }
 
-footer .copyright-section p{
+footer .copyright-section p {
   font-size: 1rem;
 }
-.copyright-section span{
-  color: orangered;
+.copyright-section span {
+  color: #ff4500;
+}
+
+/* MEDIA QUERIES */
+
+/* MOBILE VIEW  */
+@media only screen and (min-width: 300px) and (max-width: 752px) {
+  .navsection-links {
+    display: none;
+  }
+
+  header .banner-footer {
+    display: none;
+  }
+
+  .banner .overlay h1 {
+    font-size: 2rem;
+  }
+
+  .banner .overlay p {
+    width: 75%;
+  }
+
+  section.atomic-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .atomic-cards .thecards .cards {
+    width: 160px;
+  }
+
+  .atomic-mountain {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .atomic-mountain .atomic-text {
+    width: 100%;
+  }
+
+  .atomic-mountain .atomic-text .textwrapper {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+  }
+  .atomic-mountain .blue-mountain img {
+    width: 100%;
+  }
+  .atomic-mountain-02 {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .atomic-mountain-02 .atomic-text .textwrapper {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+  }
+  .atomic-mountain-02 .atomic-text {
+    width: 100%;
+  }
+
+  .atomic-mountain-02 .blue-mountain img {
+    width: 100%;
+  }
+
+  .banner-footer-02 {
+    height: 32rem;
+  }
+  .footer-parts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  .footer-logo {
+    margin-bottom: 1rem;
+  }
+  .footer-part-one {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+  .footer-part-two {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+  }
+
+  footer {
+    height: 40.2rem;
+  }
+}
+
+/* TABLET VIEW   */
+@media only screen and (min-width: 753px) and (max-width: 992px) {
+  .banner .overlay h1 {
+    color: #c75127;
+  }
+
+  .banner-footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner-footer .one {
+    width: 25%;
+    justify-content: center;
+    padding-top: 0.2rem;
+  }
+
+  .banner-footer .two {
+    width: 95%;
+    padding: 0.3rem 0 0 3.5rem;
+    justify-content: center;
+  }
+
+  section.atomic-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .atomic-cards .thecards .cards {
+    width: 46%;
+  }
+
+  .atomic-mountain-02 .atomic-text .textwrapper {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .atomic-mountain-02 .atomic-text .textwrapper p {
+    width: 100%;
+  }
+  .atomic-mountain-02 .atomic-text .textwrapper h3 {
+    padding: 0;
+    width: 100%;
+  }
+  .atomic-mountain .atomic-text .textwrapper {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .atomic-mountain .atomic-text .textwrapper p {
+    width: 100%;
+  }
+  .atomic-mountain .atomic-text .textwrapper h3 {
+    padding: 0;
+    width: 100%;
+  }
+  .atomic-mountain .blue-mountain img {
+    width: 100%;
+  }
+
+  .atomic-mountain-02 .blue-mountain img {
+    width: 100%;
+  }
+
+  .banner-footer-02 {
+    height: 32rem;
+  }
+  footer {
+    height: 40.2rem;
+  }
+
+  .footer-part-one p {
+    width: 100%;
+  }
 }
