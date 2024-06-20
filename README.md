@@ -1,2 +1,2 @@
 # Atomic Lite
-I recreated the atomic lite template from Hubspot
+I recreated the Atomic Lite Theme by GiantFocal
