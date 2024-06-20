@@ -1,0 +1,559 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  box-shadow: 1px 2px 3px #d5d0d0;
+}
+header nav .navsection-logo {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navsection-links {
+  flex-grow: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navsection-links ul li {
+  list-style: none;
+  display: inline;
+}
+
+.navsection-links ul li a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.7rem 0.5rem;
+  color: #978e8e;
+  height: 100%;
+  /* font-size: 0.7rem; */
+}
+
+header nav .navsection-links ul li a:hover {
+  color: red;
+  background-color: #e9e9e9;
+  border-top: 2px solid gray;
+  border-bottom: 2px solid gray;
+}
+
+.navsection-searchicon {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardLines {
+  border-right: 1px solid #e8d2d2;
+  border-left: 1px solid #e8d2d2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  height: 100%;
+}
+
+.banner {
+  height: 40rem;
+  background: url(../images/mountain-01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner .overlay {
+  background-color: #552f2f45;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #d5b1b1;
+  padding-top: 5rem;
+}
+
+.banner .overlay h1 {
+  font-size: 3.5rem;
+}
+.banner .overlay p {
+  width: 50%;
+  text-align: center;
+  padding: 0 0 2rem 0;
+  font-size: 1.3rem;
+}
+.banner .overlay a {
+  text-decoration: none;
+  border: 1px solid #b59090;
+  background-color: #d93d04;
+  padding: 1.2rem;
+  color: #e0b6b6;
+  border-radius: 10px;
+}
+
+.banner .overlay a:hover {
+  background-color: #c75127;
+}
+
+.banner-footer {
+  background-color: #454e75;
+  display: flex;
+  height: 180px;
+  color: #ffffff;
+}
+
+.banner-footer .group {
+  display: flex;
+}
+
+.banner-footer .one {
+  width: 25%;
+  justify-content: center;
+  padding-top: 1.5rem;
+}
+
+.banner-footer .two {
+  width: 75%;
+  padding: 1.5rem 0 0 1.5rem;
+}
+
+.banner-footer .textcard {
+  width: 25%;
+  margin-right: 2rem;
+  position: relative;
+}
+
+.banner-footer .textcard .number {
+  font-weight: bold;
+  font-size: 3rem;
+}
+.banner-footer .textcard .textspan {
+  font-weight: normal;
+  font-size: 1.2rem;
+  width: 5%;
+}
+.banner-footer .textcard p {
+  font-size: 1.5rem;
+}
+
+.banner-footer .fa {
+  color: #ff4500;
+  font-size: 2rem;
+  position: absolute;
+  padding: 1rem 0.5rem 0 0;
+  left: -36px;
+}
+
+.atomic-cards {
+  width: 100%;
+  display: flex;
+  padding: 5rem 0 3rem;
+  margin: 0;
+}
+
+.atomic-cards .innerheadline {
+  width: 30%;
+  text-align: center;
+}
+
+.atomic-cards .thecards {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.fa-diamond {
+  color: #ff0000;
+}
+.atomic-cards .thecards .cards {
+  width: 25%;
+  height: 139px;
+  margin: 0 1rem 1rem 0;
+  padding: 1rem;
+  overflow: hidden;
+  box-shadow: 1px 2px 3px #c7b7b7;
+}
+.atomic-cards .thecards .cards p {
+  font-size: smaller;
+}
+.atomic-mountain {
+  display: flex;
+  padding: 3rem 0 5rem;
+  width: 100%;
+}
+
+.atomic-mountain > div {
+  width: 50%;
+  padding: 2rem;
+}
+.atomic-mountain .atomic-text {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.atomic-mountain .atomic-text .textwrapper {
+  width: 50%;
+  padding-top: 8rem;
+}
+
+.atomic-mountain .atomic-text h3 {
+  padding: 1rem 0;
+  text-align: left;
+}
+.atomic-mountain .atomic-text p {
+  padding: 0 0 1rem 0;
+}
+.atomic-mountain .atomic-text .smalltext {
+  padding: 0;
+  font-size: smaller;
+}
+
+.atomic-mountain .blue-mountain {
+  width: 100%;
+}
+
+.atomic-mountain-02 {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 10rem;
+  width: 100%;
+}
+
+.atomic-mountain-02 > div {
+  width: 50%;
+  padding: 2rem;
+}
+
+.atomic-mountain-02 .atomic-text {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.atomic-mountain-02 .atomic-text .textwrapper {
+  width: 50%;
+  padding-top: 8rem;
+}
+
+.atomic-mountain-02 .atomic-text h3 {
+  padding: 1rem 0;
+  text-align: left;
+}
+
+.atomic-mountain-02 .atomic-text p {
+  padding: 0 0 1rem 0;
+}
+.atomic-mountain-02 .atomic-text .smalltext {
+  padding: 0;
+  font-size: smaller;
+}
+
+.atomic-mountain-02 .blue-mountain {
+  width: 100%;
+}
+
+.banner-footer-02 {
+  background-color: #ed7268;
+  height: 50vh;
+  /* margin-top: 10rem; */
+}
+
+.banner-footer-02 .innertext {
+  text-align: center;
+  color: #ffffff;
+}
+
+.banner-footer-02 .innertext h1 {
+  padding: 8rem 0 1rem;
+}
+
+.banner-footer-02 .innertext p {
+  margin-bottom: 3rem;
+}
+.banner-footer-02 .innertext a {
+  border: 2px solid #ffffff;
+  padding: 0.8rem 1rem;
+  border-radius: 3px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.banner-footer-02 .innertext a:hover {
+  background-color: #ffffff;
+  color: #544b4b;
+}
+
+footer {
+  color: #ffffff;
+  width: 100%;
+  height: 350px;
+  background: url("../images/footer-background.jpeg");
+}
+.footer-parts {
+  display: flex;
+  padding: 7rem 12rem 8rem;
+}
+.footer-part-one {
+  width: 50%;
+}
+
+.footer-logo {
+  width: 8%;
+}
+
+.footer-part-one p {
+  width: 60%;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.footer-part-one .fa-facebook {
+  background-color: #454e75;
+  border: 1px solid #454e75;
+  border-radius: 100%;
+  padding: 0.35rem;
+}
+.footer-part-two {
+  display: flex;
+}
+
+.footer-part-two .footer-headings {
+  margin-left: 5rem;
+  height: 100%;
+  font-size: small;
+}
+.footer-part-two .footer-headings ul li {
+  list-style: none;
+  padding-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.footer-part-two .footer-headings h3 {
+  margin-bottom: 2rem;
+  font-size: small;
+}
+.footer-part-two .footer-headings a {
+  text-decoration: none;
+  color: #c1bcbc;
+}
+
+.copyright-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 3rem 2rem;
+  color: #ffffff;
+  border-top: 0.5px solid #ffffff;
+}
+
+footer .copyright-section p {
+  font-size: 1rem;
+}
+.copyright-section span {
+  color: #ff4500;
+}
+
+/* MEDIA QUERIES */
+
+/* MOBILE VIEW  */
+@media only screen and (min-width: 300px) and (max-width: 752px) {
+  .navsection-links {
+    display: none;
+  }
+
+  header .banner-footer {
+    display: none;
+  }
+
+  .banner .overlay h1 {
+    font-size: 2rem;
+  }
+
+  .banner .overlay p {
+    width: 75%;
+  }
+
+  section.atomic-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .atomic-cards .thecards .cards {
+    width: 160px;
+  }
+
+  .atomic-mountain {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .atomic-mountain .atomic-text {
+    width: 100%;
+  }
+
+  .atomic-mountain .atomic-text .textwrapper {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+  }
+  .atomic-mountain .blue-mountain img {
+    width: 100%;
+  }
+  .atomic-mountain-02 {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .atomic-mountain-02 .atomic-text .textwrapper {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+  }
+  .atomic-mountain-02 .atomic-text {
+    width: 100%;
+  }
+
+  .atomic-mountain-02 .blue-mountain img {
+    width: 100%;
+  }
+
+  .banner-footer-02 {
+    height: 32rem;
+  }
+  .footer-parts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  .footer-logo {
+    margin-bottom: 1rem;
+  }
+  .footer-part-one {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+  .footer-part-two {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+  }
+
+  footer {
+    height: 40.2rem;
+  }
+}
+
+/* TABLET VIEW   */
+@media only screen and (min-width: 753px) and (max-width: 992px) {
+  .banner .overlay h1 {
+    color: #c75127;
+  }
+
+  .banner-footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner-footer .one {
+    width: 25%;
+    justify-content: center;
+    padding-top: 0.2rem;
+  }
+
+  .banner-footer .two {
+    width: 95%;
+    padding: 0.3rem 0 0 3.5rem;
+    justify-content: center;
+  }
+
+  section.atomic-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .atomic-cards .thecards .cards {
+    width: 46%;
+  }
+
+  .atomic-mountain-02 .atomic-text .textwrapper {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .atomic-mountain-02 .atomic-text .textwrapper p {
+    width: 100%;
+  }
+  .atomic-mountain-02 .atomic-text .textwrapper h3 {
+    padding: 0;
+    width: 100%;
+  }
+  .atomic-mountain .atomic-text .textwrapper {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .atomic-mountain .atomic-text .textwrapper p {
+    width: 100%;
+  }
+  .atomic-mountain .atomic-text .textwrapper h3 {
+    padding: 0;
+    width: 100%;
+  }
+  .atomic-mountain .blue-mountain img {
+    width: 100%;
+  }
+
+  .atomic-mountain-02 .blue-mountain img {
+    width: 100%;
+  }
+
+  .banner-footer-02 {
+    height: 32rem;
+  }
+  footer {
+    height: 40.2rem;
+  }
+
+  .footer-part-one p {
+    width: 100%;
+  }
+}
